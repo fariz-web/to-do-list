@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle, #59c9d1, #af62b9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    gap: 15px;
+}
+
+.input-cont {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    width: 80px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+/* Styling daftar tugas */
+#taskList {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f4f4;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+/* Efek jika tugas selesai */
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+#taskList {
+    max-height: 200px; /* Sesuaikan tinggi maksimum */
+    overflow-y: auto; /* Bikin scroll vertikal kalau tugasnya banyak */
+    width: 100%; /* Biar rapi */
+    padding: 10px;
+    list-style: none;
+}
